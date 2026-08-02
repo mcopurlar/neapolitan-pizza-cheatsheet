@@ -50,37 +50,39 @@
                     Action1("Mix & Cover"):::action
                     Wait1(Wait: 1 Hour<br>Room Temp):::time
                     Wait2(Wait: 16-24 Hours<br>Fridge):::time
-                    Wait3(Wait: 30 Mins<br>Room Temp):::time
 
-                    Ing1 --> Action1 --> Wait1 --> Wait2 --> Wait3
+                    Ing1 --> Action1 --> Wait1 --> Wait2
                 end
 
                 %% Stage 2: Main Dough
                 subgraph Stage2 [2. Main Dough]
                     direction TB
+                    Wait3("Take poolish out of fridge<br>& wait 30 mins"):::time
                     Ing2["Add to Poolish:<br>• 400ml Water<br>• 25g Sea Salt<br>• 700g Flour"]:::ingredients
                     Action2("Mix & Knead"):::action
                     Ing3["Add:<br>• 10g Olive Oil"]:::ingredients
                     Action3("Knead 10-15 Mins"):::action
                     Wait4(Wait: 15-20 Mins<br>Room Temp):::time
 
-                    Ing2 --> Action2 --> Ing3 --> Action3 --> Wait4
+                    Wait3 --> Ing2 --> Action2 --> Ing3 --> Action3 --> Wait4
                 end
 
                 %% Stage 3: Cold Ferment
                 subgraph Stage3 [3. Bulk Cold Ferment]
                     direction TB
-                    Action4("Form tight smooth ball<br>Seal in container"):::action
+                    Action4("Form tight smooth ball"):::action
+                    Ing4["Add:<br>• Olive Oil to container<br>(Prevents sticking)"]:::ingredients
+                    Action4b("Place dough inside & Seal"):::action
                     Wait5(Wait: 16-24 Hours<br>Fridge):::time
 
-                    Action4 --> Wait5
+                    Action4 --> Ing4 --> Action4b --> Wait5
                 end
 
                 %% Stage 4: Portion & Proof
                 subgraph Stage4 [4. Portion & Proof]
                     direction TB
                     Wait6(Wait: 30-60 Mins<br>Room Temp):::time
-                    Action5("Cut into 250g balls<br>(Don't deflate)"):::action
+                    Action5("Cut into 280g balls<br>(Don't deflate)"):::action
                     Wait7(Wait: 1-2 Hours<br>Room Temp):::time
                     Action6("Stretch & Bake!"):::action
 

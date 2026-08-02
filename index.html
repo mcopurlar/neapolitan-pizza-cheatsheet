@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Level Pizza Dough Cheat Sheet</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Mermaid.js for the timeline diagram -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ 
+            startOnLoad: true, 
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#e2e8f0',
+                primaryTextColor: '#1e293b',
+                primaryBorderColor: '#94a3b8',
+                lineColor: '#334155',
+                secondaryColor: '#f1f5f9',
+                tertiaryColor: '#fff'
+            },
+            flowchart: { curve: 'basis' }
+        });
+    </script>
+    <style>
+        body { background-color: #f8fafc; }
+        .mermaid { display: flex; justify-content: center; margin-top: 2rem; overflow-x: auto;}
+    </style>
+</head>
+<body class="text-slate-800 p-6 md:p-12 font-sans">
+    
+    <div class="max-w-7xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-slate-900 mb-2">Vito Iacopelli's Double Fermented Poolish Dough</h1>
+            <p class="text-slate-500">Ingredients & Timeline Cheat Sheet</p>
+        </header>
+
+        <!-- Diagram Container -->
+        <div class="mermaid">
+            flowchart LR
+                %% Styling definitions
+                classDef ingredients fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#92400e
+                classDef time wait fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#075985
+                classDef action fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#334155
+                classDef stage fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,rx:10,ry:10
+
+                %% Stage 1: Poolish
+                subgraph Stage1 [1. The Poolish]
+                    direction TB
+                    Ing1["Ingredients:<br>• 300ml Water<br>• 5g Honey<br>• 6g Fresh Yeast<br>• 300g 00 Flour"]:::ingredients
+                    Action1("Mix & Cover"):::action
+                    Wait1(Wait: 1 Hour<br>Room Temp):::time
+                    Wait2(Wait: 16-24 Hours<br>Fridge):::time
+
+                    Ing1 --> Action1 --> Wait1 --> Wait2
+                end
+
+                %% Stage 2: Main Dough
+                subgraph Stage2 [2. Main Dough]
+                    direction TB
+                    Ing2["Add to Poolish:<br>• 400ml Water<br>• 25g Sea Salt<br>• 700g Flour"]:::ingredients
+                    Action2("Mix & Knead"):::action
+                    Ing3["Add:<br>• 10g Olive Oil"]:::ingredients
+                    Action3("Knead 10-15 Mins"):::action
+                    Wait3(Wait: 15-20 Mins<br>Room Temp):::time
+
+                    Ing2 --> Action2 --> Ing3 --> Action3 --> Wait3
+                end
+
+                %% Stage 3: Cold Ferment
+                subgraph Stage3 [3. Bulk Cold Ferment]
+                    direction TB
+                    Action4("Form tight smooth ball<br>Seal in container"):::action
+                    Wait4(Wait: 16-24 Hours<br>Fridge):::time
+
+                    Action4 --> Wait4
+                end
+
+                %% Stage 4: Portioning
+                subgraph Stage4 [4. Portion & Proof]
+                    direction TB
+                    Wait5(Wait: 30-60 Mins<br>Room Temp):::time
+                    Action5("Cut into 250g balls<br>(Don't deflate)"):::action
+                    Wait6(Wait: 1-2 Hours<br>Room Temp):::time
+                    Action6("Stretch & Bake!"):::action
+
+                    Wait5 --> Action5 --> Wait6 --> Action6
+                end
+
+                %% Connect the stages
+                Stage1 ==> Stage2 ==> Stage3 ==> Stage4
+
+                %% Apply stage styling
+                class Stage1,Stage2,Stage3,Stage4 stage
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Key Tips:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Bring the poolish to room temp for 30 mins before making the main dough.</li>
+                    <li>Add the olive oil only <b>after</b> the flour is mixed in to build gluten properly.</li>
+                    <li>When shaping balls, fold the dough underneath itself to trap the air like a balloon.</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Baking:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Use <b>semolina</b> flour to stretch your dough for a soft and crunchy texture.</li>
+                    <li>Preheat your pizza stone in the oven on max temperature for at least 1 hour.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

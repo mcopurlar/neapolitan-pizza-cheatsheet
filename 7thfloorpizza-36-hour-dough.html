@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>36-Hour Neapolitan Dough Cheat Sheet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ 
+            startOnLoad: true, 
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#e2e8f0',
+                primaryTextColor: '#1e293b',
+                primaryBorderColor: '#94a3b8',
+                lineColor: '#334155',
+                secondaryColor: '#f1f5f9',
+                tertiaryColor: '#fff'
+            },
+            flowchart: { curve: 'basis' }
+        });
+    </script>
+    <style>
+        body { background-color: #f8fafc; }
+        .mermaid { display: flex; justify-content: center; margin-top: 2rem; overflow-x: auto;}
+    </style>
+</head>
+<body class="text-slate-800 p-6 md:p-12 font-sans">
+    
+    <div class="max-w-7xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+        <nav class="text-sm text-slate-500 mb-6">
+            <a href="index.html" class="hover:text-slate-900 underline">&larr; Poolish dough cheat sheet</a>
+        </nav>
+
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-slate-900 mb-2">7thfloorpizza's 36-Hour Neapolitan Dough</h1>
+            <p class="text-slate-500">65% Hydration Direct Dough &middot; Ingredients &amp; Timeline Cheat Sheet</p>
+            <p class="text-xs text-slate-400 mt-2">Source: <a href="https://www.youtube.com/watch?v=COvTl7pxDvk" class="underline hover:text-slate-600" target="_blank" rel="noopener">The Best Homemade Neapolitan Pizza Dough</a> by 7thfloorpizza</p>
+        </header>
+
+        <!-- Ingredients -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+            <div class="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
+                <h3 class="font-bold text-amber-900 mb-3">Ingredients (6 balls &times; ~280g)</h3>
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="text-left text-amber-800 border-b border-amber-200">
+                            <th class="pb-2 font-semibold">Ingredient</th>
+                            <th class="pb-2 font-semibold text-right">1000g flour</th>
+                            <th class="pb-2 font-semibold text-right">500g flour</th>
+                            <th class="pb-2 font-semibold text-right">Baker's %</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-amber-900">
+                        <tr class="border-b border-amber-100"><td class="py-1.5">"00" flour</td><td class="text-right">1000g</td><td class="text-right">500g</td><td class="text-right">100%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Tap water</td><td class="text-right">650g</td><td class="text-right">325g</td><td class="text-right">65%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Sea salt</td><td class="text-right">25g</td><td class="text-right">12.5g</td><td class="text-right">2.5%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Instant dry yeast</td><td class="text-right">1g</td><td class="text-right">0.5g</td><td class="text-right">0.1%</td></tr>
+                        <tr><td class="py-1.5">Extra virgin olive oil</td><td class="text-right" colspan="2">a few drops (optional)</td><td class="text-right">&ndash;</td></tr>
+                    </tbody>
+                </table>
+                <p class="text-xs text-amber-700 mt-3">Rule of thumb from the video: <b>only 1g of instant yeast per 1kg of flour.</b> Yield: 6 balls of ~280g, or 3 balls from the half batch.</p>
+            </div>
+            <div class="bg-sky-50 border border-sky-200 rounded-lg p-5">
+                <h3 class="font-bold text-sky-900 mb-3">Total Timeline &asymp; 36 hours</h3>
+                <ul class="text-sm text-sky-900 space-y-2">
+                    <li><span class="font-mono font-semibold">~40 min</span> &middot; Mix, knead &amp; bench rest</li>
+                    <li><span class="font-mono font-semibold">10 hrs</span> &middot; Bulk ferment, room temp (20&deg;C)</li>
+                    <li><span class="font-mono font-semibold">24 hrs+</span> &middot; Balled, in the fridge</li>
+                    <li><span class="font-mono font-semibold">2&ndash;3 hrs</span> &middot; Balls back at room temp</li>
+                    <li><span class="font-mono font-semibold">90 sec</span> &middot; Bake</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Diagram Container -->
+        <div class="mermaid">
+            flowchart LR
+                %% Styling definitions
+                classDef ingredients fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#92400e
+                classDef time fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#075985
+                classDef action fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#334155
+                classDef stage fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,rx:10,ry:10
+
+                %% Stage 1: Mix & Knead
+                subgraph Stage1 [1. Mix &amp; Knead]
+                    direction TB
+                    Ing1["Mix dry (under 1 min):<br>• 1000g 00 Flour<br>• 1g Instant Dry Yeast"]:::ingredients
+                    Ing2["Add gradually:<br>• 650g Water<br>(little by little until absorbed)"]:::ingredients
+                    Action1("Turn out, fold a couple of times<br>Knead ~10 mins<br>Ready when it pushes back"):::action
+                    Ing3["Add on top:<br>• 25g Sea Salt<br>• Few drops Olive Oil"]:::ingredients
+                    Action2("Knead ~5 mins more<br>until smooth &amp; no salt felt"):::action
+                    Wait1("Rest: 20 Mins<br>Covered with bowl, Room Temp"):::time
+
+                    Ing1 --> Ing2 --> Action1 --> Ing3 --> Action2 --> Wait1
+                end
+
+                %% Stage 2: Bulk Ferment
+                subgraph Stage2 [2. Bulk Ferment]
+                    direction TB
+                    Action3("Final shaping into<br>one smooth ball"):::action
+                    Ing4["Container:<br>• Few drops Olive Oil<br>• Damp cloth on top<br>• Lid NOT sealed tight"]:::ingredients
+                    Wait2("Wait: ~10 Hours<br>Room Temp (20°C)<br>Dough triples in size"):::time
+
+                    Action3 --> Ing4 --> Wait2
+                end
+
+                %% Stage 3: Ball & Cold Ferment
+                subgraph Stage3 [3. Ball &amp; Cold Ferment]
+                    direction TB
+                    Action4("Turn out gently<br>Keep the top side on top"):::action
+                    Action5("Cut &amp; weigh 6 × 280g<br>Ball up, close seams fully"):::action
+                    Ing5["Separate containers:<br>• Drops of Olive Oil<br>(or a little flour)"]:::ingredients
+                    Wait3("Wait: 24 Hours min<br>Fridge<br>48 / 72 / 96 hrs also fine"):::time
+
+                    Action4 --> Action5 --> Ing5 --> Wait3
+                end
+
+                %% Stage 4: Proof & Bake
+                subgraph Stage4 [4. Proof &amp; Bake]
+                    direction TB
+                    Wait4("Wait: 2-3 Hours<br>Room Temp<br>Dough must not be cold"):::time
+                    Action6("Stretch &amp; top"):::action
+                    Action7("Bake ~90 seconds<br>(Ooni Koda 16)"):::action
+
+                    Wait4 --> Action6 --> Action7
+                end
+
+                %% Connect the stages
+                Stage1 ==> Stage2 ==> Stage3 ==> Stage4
+
+                %% Apply stage styling
+                class Stage1,Stage2,Stage3,Stage4 stage
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Key Tips:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Mix the yeast into the dry flour <b>before</b> any water goes in, then add the water little by little.</li>
+                    <li>The salt goes in only <b>after</b> the first 10 minutes of kneading. The dough will tear apart at first, that is normal.</li>
+                    <li>Kneading is done when the dough is smooth again and you can't feel any salt grains under your fingers.</li>
+                    <li>Readiness test before adding salt: push the dough and it should <b>push back</b>.</li>
+                    <li>Never seal the bulk container airtight. The dough needs to breathe: damp cloth, loose lid, something heavy on top.</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Balling &amp; Baking:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>When tipping out the bulk dough, pull it so the <b>top stays on top</b>.</li>
+                    <li>Close each ball completely, either by folding the edges underneath or by rolling it on the bench while tucking the seam.</li>
+                    <li>A few drops of oil (or a dusting of flour) in each container stops the balls sticking when you need them.</li>
+                    <li>The fridge stage is flexible: 24 hours minimum, but 48, 72 or even 96 hours still bake very well.</li>
+                    <li>Take the balls out 2&ndash;3 hours before baking. Cold dough resists stretching.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+            <h3 class="font-bold text-slate-900 mb-2">Example schedule (pizza Saturday 7pm):</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Friday 6:00am</p>
+                    <p>Mix &amp; knead, then bulk at room temp.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Friday 4:00pm</p>
+                    <p>Ball into 6 &times; 280g, into the fridge.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Saturday 4:00pm</p>
+                    <p>Balls out of the fridge to warm up.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Saturday 7:00pm</p>
+                    <p>Stretch, top, bake 90 seconds.</p>
+                </div>
+            </div>
+            <p class="text-xs text-slate-400 mt-3">Bulk time assumes ~20&deg;C. A warmer kitchen ferments faster, so check for the dough tripling rather than the clock.</p>
+        </div>
+    </div>
+</body>
+</html>

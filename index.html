@@ -3,117 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next Level Pizza Dough Cheat Sheet</title>
+    <title>Neapolitan Pizza Dough Cheat Sheets</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module">
-        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-        mermaid.initialize({ 
-            startOnLoad: true, 
-            theme: 'base',
-            themeVariables: {
-                primaryColor: '#e2e8f0',
-                primaryTextColor: '#1e293b',
-                primaryBorderColor: '#94a3b8',
-                lineColor: '#334155',
-                secondaryColor: '#f1f5f9',
-                tertiaryColor: '#fff'
-            },
-            flowchart: { curve: 'basis' }
-        });
-    </script>
     <style>
         body { background-color: #f8fafc; }
-        .mermaid { display: flex; justify-content: center; margin-top: 2rem; overflow-x: auto;}
     </style>
 </head>
 <body class="text-slate-800 p-6 md:p-12 font-sans">
     
     <div class="max-w-7xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-slate-200">
-        <nav class="text-sm text-slate-500 mb-6 text-right">
-            <a href="7thfloorpizza-36-hour-dough.html" class="hover:text-slate-900 underline">36-hour direct dough cheat sheet &rarr;</a>
-        </nav>
-
         <header class="text-center mb-10">
-            <h1 class="text-3xl font-bold text-slate-900 mb-2">Vito Iacopelli's Double Fermented Poolish Dough</h1>
-            <p class="text-slate-500">Ingredients & Timeline Cheat Sheet</p>
+            <h1 class="text-3xl font-bold text-slate-900 mb-2">Neapolitan Pizza Dough Cheat Sheets</h1>
+            <p class="text-slate-500">One-page timelines, ingredient tables and key points digested from YouTube recipes.</p>
         </header>
 
-        <!-- Diagram Container -->
-        <div class="mermaid">
-            flowchart LR
-                %% Styling definitions
-                classDef ingredients fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#92400e
-                classDef time wait fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#075985
-                classDef action fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#334155
-                classDef stage fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,rx:10,ry:10
+        <!-- Recipe cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                %% Stage 1: Poolish
-                subgraph Stage1 [1. The Poolish]
-                    direction TB
-                    Ing1["Ingredients:<br>• 300ml Water<br>• 5g Honey<br>• 6g Fresh Yeast<br>• 300g 00 Flour"]:::ingredients
-                    Action1("Mix & Cover"):::action
-                    Wait1(Wait: 1 Hour<br>Room Temp):::time
-                    Wait2(Wait: 16-24 Hours<br>Fridge):::time
+            <a href="vito-double-fermented-poolish.html" class="group flex flex-col bg-slate-50 border border-slate-200 rounded-lg p-5 hover:border-slate-400 hover:shadow-sm transition">
+                <div class="flex flex-wrap gap-2 mb-3 text-xs font-semibold">
+                    <span class="px-2 py-0.5 rounded bg-violet-100 text-violet-800">Poolish</span>
+                    <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800">70% hydration</span>
+                    <span class="px-2 py-0.5 rounded bg-sky-100 text-sky-800">~40&ndash;50 hrs</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 group-hover:underline">Vito Iacopelli's Double Fermented Poolish Dough</h2>
+                <p class="text-sm text-slate-600 mt-2 flex-1">A honey-sweetened poolish ferments overnight in the fridge, then the main dough gets a second cold ferment. Soft and crunchy result with a small amount of olive oil.</p>
+                <dl class="text-xs text-slate-500 mt-4 grid grid-cols-2 gap-x-3 gap-y-1">
+                    <dt class="font-semibold">Yeast</dt><dd>6g fresh (in the poolish)</dd>
+                    <dt class="font-semibold">Balls</dt><dd>6 &times; 280g</dd>
+                    <dt class="font-semibold">Fridge</dt><dd>2 &times; 16&ndash;24 hrs</dd>
+                </dl>
+                <div class="mt-4 flex items-center justify-between text-sm">
+                    <span class="font-semibold text-slate-900">Open cheat sheet &rarr;</span>
+                    <span class="text-xs text-slate-400">Vito Iacopelli</span>
+                </div>
+            </a>
 
-                    Ing1 --> Action1 --> Wait1 --> Wait2
-                end
+            <a href="7thfloorpizza-36-hour-dough.html" class="group flex flex-col bg-slate-50 border border-slate-200 rounded-lg p-5 hover:border-slate-400 hover:shadow-sm transition">
+                <div class="flex flex-wrap gap-2 mb-3 text-xs font-semibold">
+                    <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Direct dough</span>
+                    <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800">65% hydration</span>
+                    <span class="px-2 py-0.5 rounded bg-sky-100 text-sky-800">~36 hrs</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 group-hover:underline">7thfloorpizza's 36-Hour Neapolitan Dough</h2>
+                <p class="text-sm text-slate-600 mt-2 flex-1">Four ingredients, hand kneaded. A long 10-hour bulk at room temperature, then 24 hours balled in the fridge. Includes timings for a 26&deg;C kitchen.</p>
+                <dl class="text-xs text-slate-500 mt-4 grid grid-cols-2 gap-x-3 gap-y-1">
+                    <dt class="font-semibold">Yeast</dt><dd>1g instant dry</dd>
+                    <dt class="font-semibold">Balls</dt><dd>6 &times; 280g</dd>
+                    <dt class="font-semibold">Fridge</dt><dd>24&ndash;96 hrs, balled</dd>
+                </dl>
+                <div class="mt-4 flex items-center justify-between text-sm">
+                    <span class="font-semibold text-slate-900">Open cheat sheet &rarr;</span>
+                    <span class="text-xs text-slate-400">7thfloorpizza</span>
+                </div>
+            </a>
 
-                %% Stage 2: Main Dough
-                subgraph Stage2 [2. Main Dough]
-                    direction TB
-                    Wait3("Take poolish out of fridge<br>& wait 30 mins"):::time
-                    Ing2["Add to Poolish:<br>• 400ml Water<br>• 25g Sea Salt<br>• 700g Flour"]:::ingredients
-                    Action2("Mix & Knead"):::action
-                    Ing3["Add:<br>• 10g Olive Oil"]:::ingredients
-                    Action3("Knead 10-15 Mins"):::action
-                    Wait4(Wait: 15-20 Mins<br>Room Temp):::time
+            <a href="neapolitan-in-the-alps-48-hour-dough.html" class="group flex flex-col bg-slate-50 border border-slate-200 rounded-lg p-5 hover:border-slate-400 hover:shadow-sm transition">
+                <div class="flex flex-wrap gap-2 mb-3 text-xs font-semibold">
+                    <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">Direct dough</span>
+                    <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800">70% hydration</span>
+                    <span class="px-2 py-0.5 rounded bg-sky-100 text-sky-800">~48 hrs</span>
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 group-hover:underline">The Neapolitan in the Alps' 48-Hour Cold Ferment Dough</h2>
+                <p class="text-sm text-slate-600 mt-2 flex-1">Contemporary Neapolitan from a professional trainer. Mixer kneading with water added in two parts, then 24 hours bulk and 24 hours balled, both in the fridge. Includes a Margherita topping spec.</p>
+                <dl class="text-xs text-slate-500 mt-4 grid grid-cols-2 gap-x-3 gap-y-1">
+                    <dt class="font-semibold">Yeast</dt><dd>2.5g fresh (~0.8g instant)</dd>
+                    <dt class="font-semibold">Balls</dt><dd>7 &times; 250g</dd>
+                    <dt class="font-semibold">Fridge</dt><dd>~20 hrs bulk + 18&ndash;24 hrs balled</dd>
+                </dl>
+                <div class="mt-4 flex items-center justify-between text-sm">
+                    <span class="font-semibold text-slate-900">Open cheat sheet &rarr;</span>
+                    <span class="text-xs text-slate-400">The Neapolitan in the Alps</span>
+                </div>
+            </a>
 
-                    Wait3 --> Ing2 --> Action2 --> Ing3 --> Action3 --> Wait4
-                end
-
-                %% Stage 3: Cold Ferment
-                subgraph Stage3 [3. Bulk Cold Ferment]
-                    direction TB
-                    Action4("Form tight smooth ball"):::action
-                    Ing4["Add:<br>• Olive Oil to container<br>(Prevents sticking)"]:::ingredients
-                    Action4b("Place dough inside & Seal"):::action
-                    Wait5(Wait: 16-24 Hours<br>Fridge):::time
-
-                    Action4 --> Ing4 --> Action4b --> Wait5
-                end
-
-                %% Stage 4: Portion & Proof
-                subgraph Stage4 [4. Portion & Proof]
-                    direction TB
-                    Wait6(Wait: 30-60 Mins<br>Room Temp):::time
-                    Action5("Cut into 280g balls<br>(Don't deflate)"):::action
-                    Wait7(Wait: 1-2 Hours<br>Room Temp):::time
-                    Action6("Stretch & Bake!"):::action
-
-                    Wait6 --> Action5 --> Wait7 --> Action6
-                end
-
-                %% Connect the stages
-                Stage1 ==> Stage2 ==> Stage3 ==> Stage4
-
-                %% Apply stage styling
-                class Stage1,Stage2,Stage3,Stage4 stage
         </div>
 
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+        <!-- Comparison table -->
+        <div class="mt-12">
+            <h3 class="font-bold text-slate-900 mb-3">At a glance</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-slate-700 border border-slate-200 rounded-lg overflow-hidden">
+                    <thead class="bg-slate-100 text-left text-slate-800">
+                        <tr>
+                            <th class="px-3 py-2 font-semibold">Recipe</th>
+                            <th class="px-3 py-2 font-semibold">Method</th>
+                            <th class="px-3 py-2 font-semibold">Flour</th>
+                            <th class="px-3 py-2 font-semibold">Water</th>
+                            <th class="px-3 py-2 font-semibold">Salt</th>
+                            <th class="px-3 py-2 font-semibold">Yeast</th>
+                            <th class="px-3 py-2 font-semibold">Extras</th>
+                            <th class="px-3 py-2 font-semibold">Room-temp stages</th>
+                            <th class="px-3 py-2 font-semibold">Fridge stages</th>
+                            <th class="px-3 py-2 font-semibold">Bake</th>
+                            <th class="px-3 py-2 font-semibold">Video</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200">
+                        <tr>
+                            <td class="px-3 py-2 font-semibold whitespace-nowrap"><a href="vito-double-fermented-poolish.html" class="underline hover:text-slate-900">Vito Iacopelli</a></td>
+                            <td class="px-3 py-2">Poolish, double fermented</td>
+                            <td class="px-3 py-2 whitespace-nowrap">1000g 00</td>
+                            <td class="px-3 py-2 whitespace-nowrap">700ml (70%)</td>
+                            <td class="px-3 py-2 whitespace-nowrap">25g</td>
+                            <td class="px-3 py-2 whitespace-nowrap">6g fresh</td>
+                            <td class="px-3 py-2 whitespace-nowrap">5g honey, 10g olive oil</td>
+                            <td class="px-3 py-2">1 hr poolish, then short rests only</td>
+                            <td class="px-3 py-2">Poolish 16&ndash;24 hrs, bulk 16&ndash;24 hrs</td>
+                            <td class="px-3 py-2">Stone, max oven temp</td>
+                            <td class="px-3 py-2 whitespace-nowrap"><a href="https://www.youtube.com/watch?v=u7Hd6ZzKgBM" class="underline hover:text-slate-900" target="_blank" rel="noopener">YouTube &nearr;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-2 font-semibold whitespace-nowrap"><a href="7thfloorpizza-36-hour-dough.html" class="underline hover:text-slate-900">7thfloorpizza</a></td>
+                            <td class="px-3 py-2">Direct, hand kneaded</td>
+                            <td class="px-3 py-2 whitespace-nowrap">1000g 00</td>
+                            <td class="px-3 py-2 whitespace-nowrap">650g (65%)</td>
+                            <td class="px-3 py-2 whitespace-nowrap">25g</td>
+                            <td class="px-3 py-2 whitespace-nowrap">1g instant</td>
+                            <td class="px-3 py-2 whitespace-nowrap">Drops of olive oil</td>
+                            <td class="px-3 py-2">10 hrs bulk (6&ndash;7 at 26&deg;C), 2&ndash;3 hrs before bake</td>
+                            <td class="px-3 py-2">Balled 24 hrs, up to 96</td>
+                            <td class="px-3 py-2">~90 sec, Ooni</td>
+                            <td class="px-3 py-2 whitespace-nowrap"><a href="https://www.youtube.com/watch?v=COvTl7pxDvk" class="underline hover:text-slate-900" target="_blank" rel="noopener">YouTube &nearr;</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-2 font-semibold whitespace-nowrap"><a href="neapolitan-in-the-alps-48-hour-dough.html" class="underline hover:text-slate-900">The Neapolitan in the Alps</a></td>
+                            <td class="px-3 py-2">Direct, mixer, cold ferment</td>
+                            <td class="px-3 py-2 whitespace-nowrap">1000g 00, W300</td>
+                            <td class="px-3 py-2 whitespace-nowrap">700g (70%)</td>
+                            <td class="px-3 py-2 whitespace-nowrap">25g</td>
+                            <td class="px-3 py-2 whitespace-nowrap">2.5g fresh</td>
+                            <td class="px-3 py-2 whitespace-nowrap">&ndash;</td>
+                            <td class="px-3 py-2">30 min&ndash;2 hrs before each fridge stage, 1&ndash;2 hrs before bake</td>
+                            <td class="px-3 py-2">Bulk ~20 hrs, balled 18&ndash;24 hrs, at 4&ndash;6&deg;C</td>
+                            <td class="px-3 py-2">90&ndash;110 sec at ~450&deg;C</td>
+                            <td class="px-3 py-2 whitespace-nowrap"><a href="https://www.youtube.com/watch?v=xR5zLOAyoVk" class="underline hover:text-slate-900" target="_blank" rel="noopener">YouTube &nearr;</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Shared notes -->
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
             <div>
-                <h3 class="font-bold text-slate-900 mb-2">Key Tips:</h3>
-                <ul class="list-disc pl-5 space-y-1">
-                    <li>Add the olive oil only <b>after</b> the flour is mixed in to build gluten properly.</li>
-                    <li>When shaping balls, fold the dough underneath itself to trap the air like a balloon.</li>
-                </ul>
+                <h3 class="font-bold text-slate-900 mb-2">Swapping yeast types:</h3>
+                <p>By weight, <b>fresh : active dry : instant &asymp; 3 : 1.25 : 1</b>. Fresh yeast is mostly water and active dry has fewer live cells per gram, so 3g fresh &asymp; 1.25g active dry &asymp; 1g instant. Instant goes straight into the flour, active dry should be dissolved in warm water first, fresh gets crumbled into the water.</p>
             </div>
             <div>
-                <h3 class="font-bold text-slate-900 mb-2">Baking:</h3>
-                <ul class="list-disc pl-5 space-y-1">
-                    <li>Use <b>semolina</b> flour to stretch your dough for a soft and crunchy texture.</li>
-                    <li>Preheat your pizza stone in the oven on max temperature for at least 1 hour.</li>
-                </ul>
+                <h3 class="font-bold text-slate-900 mb-2">Reading the timelines:</h3>
+                <p>Room-temperature timings assume roughly 20&deg;C unless a sheet says otherwise. Yeast works about 1.5&ndash;1.7&times; faster at 26&deg;C, so in a warm kitchen shorten the room-temp stages or reduce the yeast, and always go by how the dough looks rather than the clock.</p>
             </div>
         </div>
     </div>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>48-Hour Cold Ferment Dough Cheat Sheet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ 
+            startOnLoad: true, 
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#e2e8f0',
+                primaryTextColor: '#1e293b',
+                primaryBorderColor: '#94a3b8',
+                lineColor: '#334155',
+                secondaryColor: '#f1f5f9',
+                tertiaryColor: '#fff'
+            },
+            flowchart: { curve: 'basis' }
+        });
+    </script>
+    <style>
+        body { background-color: #f8fafc; }
+        .mermaid { display: flex; justify-content: center; margin-top: 2rem; overflow-x: auto;}
+    </style>
+</head>
+<body class="text-slate-800 p-6 md:p-12 font-sans">
+    
+    <div class="max-w-7xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+        <nav class="text-sm text-slate-500 mb-6">
+            <a href="index.html" class="hover:text-slate-900 underline">&larr; All recipes</a>
+        </nav>
+
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-slate-900 mb-2">The Neapolitan in the Alps' 48-Hour Cold Ferment Dough</h1>
+            <p class="text-slate-500">70% Hydration Direct Dough, Contemporary Neapolitan &middot; Ingredients &amp; Timeline Cheat Sheet</p>
+            <p class="text-xs text-slate-400 mt-2">Source: <a href="https://www.youtube.com/watch?v=xR5zLOAyoVk" class="underline hover:text-slate-600" target="_blank" rel="noopener">NEAPOLITAN PIZZA Dough Recipe | 48-HOUR Direct Dough</a> by Sergio, The Neapolitan in the Alps &middot; <a href="https://www.theneapolitaninthealps.com/post/neapolitan-pizza-dough-recipe" class="underline hover:text-slate-600" target="_blank" rel="noopener">written recipe</a></p>
+        </header>
+
+        <!-- Ingredients -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+            <div class="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
+                <h3 class="font-bold text-amber-900 mb-3">Ingredients (7 balls &times; ~250g, 30cm pizzas)</h3>
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="text-left text-amber-800 border-b border-amber-200">
+                            <th class="pb-2 font-semibold">Ingredient</th>
+                            <th class="pb-2 font-semibold text-right">1000g flour</th>
+                            <th class="pb-2 font-semibold text-right">500g flour</th>
+                            <th class="pb-2 font-semibold text-right">Baker's %</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-amber-900">
+                        <tr class="border-b border-amber-100"><td class="py-1.5">"00" or "0" flour, W280&ndash;320</td><td class="text-right">1000g</td><td class="text-right">500g</td><td class="text-right">100%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Water (in two parts: 600g + 100g)</td><td class="text-right">700g</td><td class="text-right">350g</td><td class="text-right">70%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Salt</td><td class="text-right">25g</td><td class="text-right">12.5g</td><td class="text-right">2.5%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Fresh yeast</td><td class="text-right">2.5g</td><td class="text-right">1.25g</td><td class="text-right">0.25%</td></tr>
+                        <tr><td class="py-1.5 text-amber-700">&nbsp;&nbsp;or instant dry yeast</td><td class="text-right text-amber-700">~0.8g</td><td class="text-right text-amber-700">~0.4g</td><td class="text-right text-amber-700">~0.08%</td></tr>
+                    </tbody>
+                </table>
+                <p class="text-xs text-amber-700 mt-3">A <b>W300</b> flour is a strong flour built for 48-hour fermentation. Ball weight 240&ndash;260g gives a 28&ndash;33cm pizza. Total dough ~1.73kg.</p>
+            </div>
+            <div class="bg-sky-50 border border-sky-200 rounded-lg p-5">
+                <h3 class="font-bold text-sky-900 mb-3">Total Timeline &asymp; 48 hours</h3>
+                <ul class="text-sm text-sky-900 space-y-2">
+                    <li><span class="font-mono font-semibold">12&ndash;17 min</span> &middot; Knead in mixer (water in two parts)</li>
+                    <li><span class="font-mono font-semibold">30 min&ndash;2 hrs</span> &middot; Bulk rest, room temp</li>
+                    <li><span class="font-mono font-semibold">~20 hrs</span> &middot; Bulk in fridge at 4&ndash;6&deg;C (16&ndash;30 OK)</li>
+                    <li><span class="font-mono font-semibold">30 min&ndash;2 hrs</span> &middot; Balled, room temp</li>
+                    <li><span class="font-mono font-semibold">18&ndash;24 hrs</span> &middot; Balled, in fridge at 4&ndash;6&deg;C</li>
+                    <li><span class="font-mono font-semibold">1&ndash;2 hrs</span> &middot; Balls back at room temp</li>
+                    <li><span class="font-mono font-semibold">90&ndash;110 sec</span> &middot; Bake at ~450&deg;C</li>
+                </ul>
+                <p class="text-xs text-sky-700 mt-3">Fermentation is split in half: about 24 hrs in bulk and 24 hrs in balls, both in the fridge. The room-temp rests are short and depend on your kitchen temperature and dough size.</p>
+            </div>
+        </div>
+
+        <!-- Diagram Container -->
+        <div class="mermaid">
+            flowchart LR
+                %% Styling definitions
+                classDef ingredients fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#92400e
+                classDef time fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#075985
+                classDef action fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#334155
+                classDef stage fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,rx:10,ry:10
+
+                %% Stage 1: Knead
+                subgraph Stage1 [1. Knead in Mixer]
+                    direction TB
+                    Ing1["In the bowl:<br>• 1000g 00 Flour (W300)<br>• 2.5g Fresh Yeast"]:::ingredients
+                    Ing2["Add first water:<br>• ~600g Water (60%)"]:::ingredients
+                    Action1("Speed 1 (~100 rpm)<br>~6 mins until absorbed<br>Builds the gluten"):::action
+                    Ing3["Add:<br>• 25g Salt<br>• Splash of water"]:::ingredients
+                    Action2("Speed 2 (~200 rpm)<br>Add last ~100g water slowly<br>Total 12-17 mins"):::action
+                    Check1("Check: dough 23-25°C<br>Elastic, doesn't tear<br>Forms a smooth ball"):::action
+
+                    Ing1 --> Ing2 --> Action1 --> Ing3 --> Action2 --> Check1
+                end
+
+                %% Stage 2: Bulk Cold Ferment
+                subgraph Stage2 [2. Bulk Cold Ferment]
+                    direction TB
+                    Ing4["Oiled container<br>Fold the dough inside it<br>Seal tightly"]:::ingredients
+                    Wait1("Rest: 30 Mins - 2 Hours<br>Room Temp (20-24°C)"):::time
+                    Wait2("Wait: ~20 Hours<br>Fridge 4-6°C<br>16-30 hrs also fine"):::time
+
+                    Ing4 --> Wait1 --> Wait2
+                end
+
+                %% Stage 3: Ball & Cold Proof
+                subgraph Stage3 [3. Ball &amp; Cold Proof]
+                    direction TB
+                    Action3("Straight from the fridge:<br>divide into 250g balls<br>(240-260g)"):::action
+                    Action4("Roll on bench for tension<br>Pinch the bottom closed<br>Dip bottom in semolina"):::action
+                    Ing5["Sealed ball container"]:::ingredients
+                    Wait3("Rest: 30 Mins - 2 Hours<br>Room Temp (20-23°C)"):::time
+                    Wait4("Wait: 18-24 Hours<br>Fridge 4-6°C"):::time
+
+                    Action3 --> Action4 --> Ing5 --> Wait3 --> Wait4
+                end
+
+                %% Stage 4: Stretch & Bake
+                subgraph Stage4 [4. Stretch &amp; Bake]
+                    direction TB
+                    Wait5("Wait: 1-2 Hours<br>Room Temp<br>Never stretch cold dough"):::time
+                    Action5("Stretch in semolina:<br>press gas out to the rim,<br>then rotate on knuckles"):::action
+                    Ing6["Margherita per pizza:<br>• 100g San Marzano sauce<br>• 30g Pecorino / Parmesan<br>• Basil<br>• 90g Fior di Latte<br>• Drizzle of olive oil"]:::ingredients
+                    Action6("Bake 90-110 seconds<br>at ~450°C"):::action
+
+                    Wait5 --> Action5 --> Ing6 --> Action6
+                end
+
+                %% Connect the stages
+                Stage1 ==> Stage2 ==> Stage3 ==> Stage4
+
+                %% Apply stage styling
+                class Stage1,Stage2,Stage3,Stage4 stage
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Kneading Tips:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Add the water in <b>two parts</b>. The first 60% builds the gluten network that can then absorb the last 10%, which goes in slowly after the salt.</li>
+                    <li>Aim for a final dough temperature of <b>23&ndash;25&deg;C</b>. Use colder water if your kitchen or mixer runs warm.</li>
+                    <li>Done when the dough is elastic, does not tear easily, and comes together as a smooth ball.</li>
+                    <li><b>No mixer?</b> Dissolve the yeast in the water, add most of the flour, then the salt. Knead 8&ndash;10 minutes until no longer sticky, rest 30 minutes, then fold to build strength. Repeat rest + fold if it still feels weak.</li>
+                    <li>Fold the dough a few times inside the oiled container before the bulk rest to make it homogeneous.</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Fermentation, Balling &amp; Baking:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Cold fermentation is <b>flexible</b>: bulk anywhere from 16 to 30 hours, balls 18 to 24 hours. Good for planning around your schedule.</li>
+                    <li>The room-temp rests before each fridge stage are shorter in a warm kitchen or with a small batch, longer when cold.</li>
+                    <li>Don't oversize the balls for a given pizza diameter. A heavier ball on the same 30cm pizza gives a denser, less light result.</li>
+                    <li>Stretch in semolina so no damp patches stick. Press from the centre to push the gas into the rim, then finish on your knuckles and let gravity do the work.</li>
+                    <li>Leopard spotting on the crust means the fermentation and the oven temperature were right. The centre should be thin, the crumb open and light.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+            <h3 class="font-bold text-slate-900 mb-2">Example schedule (pizza Saturday 7pm):</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Thursday 6:00pm</p>
+                    <p>Knead, fold into the oiled container, rest on the counter.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Thursday 7:00pm</p>
+                    <p>Bulk container into the fridge.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Friday 5:00pm</p>
+                    <p>Ball into 7 &times; 250g, rest on the counter.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Friday 6:00pm</p>
+                    <p>Ball container into the fridge.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Saturday 5:30pm</p>
+                    <p>Balls out of the fridge to warm up.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Saturday 7:00pm</p>
+                    <p>Stretch, top, bake 90&ndash;110 seconds.</p>
+                </div>
+            </div>
+            <p class="text-xs text-slate-400 mt-3">Both fridge stages have slack in them, so shifting any step by a few hours is fine. Room-temp rests assume ~20&ndash;24&deg;C; in a warmer kitchen keep them at the short end.</p>
+        </div>
+    </div>
+</body>
+</html>

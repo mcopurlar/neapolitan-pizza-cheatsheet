@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biga No Stress Home Oven Cheat Sheet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ 
+            startOnLoad: true, 
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#e2e8f0',
+                primaryTextColor: '#1e293b',
+                primaryBorderColor: '#94a3b8',
+                lineColor: '#334155',
+                secondaryColor: '#f1f5f9',
+                tertiaryColor: '#fff'
+            },
+            flowchart: { curve: 'basis' }
+        });
+    </script>
+    <style>
+        body { background-color: #f8fafc; }
+        .mermaid { display: flex; justify-content: center; margin-top: 2rem; overflow-x: auto;}
+    </style>
+</head>
+<body class="text-slate-800 p-6 md:p-12 font-sans">
+    
+    <div class="max-w-7xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+        <nav class="text-sm text-slate-500 mb-6">
+            <a href="index.html" class="hover:text-slate-900 underline">&larr; All recipes</a>
+        </nav>
+
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-slate-900 mb-2">Vito Iacopelli's Biga No Stress Dough for the Home Oven</h1>
+            <p class="text-slate-500">100% Biga, 48-Hour Cold Preferment &middot; Ingredients &amp; Timeline Cheat Sheet</p>
+            <p class="text-xs text-slate-400 mt-2">Source: <a href="https://www.youtube.com/watch?v=V2RCYjVhb9w" class="underline hover:text-slate-600" target="_blank" rel="noopener">How to Make Perfect Biga No Stress Pizza Dough at Home 100%</a> by Vito Iacopelli &middot; method by Roberto Susta (Pizzaiolo Napoletano)</p>
+        </header>
+
+        <!-- Ingredients -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+            <div class="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
+                <h3 class="font-bold text-amber-900 mb-3">Ingredients (~1.03kg dough, ~67% hydration)</h3>
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="text-left text-amber-800 border-b border-amber-200">
+                            <th class="pb-2 font-semibold">Ingredient</th>
+                            <th class="pb-2 font-semibold text-right">Amount</th>
+                            <th class="pb-2 font-semibold text-right">Baker's %</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-amber-900">
+                        <tr class="bg-amber-100/60"><td class="py-1.5 font-semibold" colspan="3">The biga (all of the flour goes in here)</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">"00" flour</td><td class="text-right">600g</td><td class="text-right">100%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Water</td><td class="text-right">300ml</td><td class="text-right">50%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Honey (dissolved in the water)</td><td class="text-right">5g</td><td class="text-right">0.8%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Dry yeast <span class="text-amber-700">(or 10g fresh)</span></td><td class="text-right">5g</td><td class="text-right">0.8%</td></tr>
+                        <tr class="bg-amber-100/60"><td class="py-1.5 font-semibold" colspan="3">The dough (added after 48 hours)</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Water</td><td class="text-right">100ml</td><td class="text-right">+17%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Salt</td><td class="text-right">15g</td><td class="text-right">2.5%</td></tr>
+                        <tr><td class="py-1.5">Extra virgin olive oil <span class="text-amber-700">(for a home oven)</span></td><td class="text-right">1 tbsp</td><td class="text-right">~2%</td></tr>
+                    </tbody>
+                </table>
+                <p class="text-xs text-amber-700 mt-3">Total water 400ml on 600g flour is ~67%. Vito calls it 70% and says a home-oven dough can go up to 80%. The yeast is high compared with a direct dough because the biga is stiff at 50% and spends 48 hours cold.</p>
+            </div>
+            <div class="bg-sky-50 border border-sky-200 rounded-lg p-5">
+                <h3 class="font-bold text-sky-900 mb-3">Total Timeline &asymp; 54 hours</h3>
+                <ul class="text-sm text-sky-900 space-y-2">
+                    <li><span class="font-mono font-semibold">~5 min</span> &middot; Mix the biga (no kneading)</li>
+                    <li><span class="font-mono font-semibold">2 hrs</span> &middot; Biga at room temp</li>
+                    <li><span class="font-mono font-semibold">48 hrs</span> &middot; Biga in the fridge</li>
+                    <li><span class="font-mono font-semibold">1 hr</span> &middot; Biga back at room temp</li>
+                    <li><span class="font-mono font-semibold">~30 min</span> &middot; Mix the dough + 15 min rest</li>
+                    <li><span class="font-mono font-semibold">1 hr</span> &middot; Bulk, wrapped, room temp</li>
+                    <li><span class="font-mono font-semibold">1 hr</span> &middot; Balled, room temp</li>
+                    <li><span class="font-mono font-semibold">2 stages</span> &middot; Home oven bake</li>
+                </ul>
+                <p class="text-xs text-sky-700 mt-3">All the long fermentation happens in the biga. Once it is mixed into dough, only two short room-temp rests remain. The 1-hour rests assume ~20&deg;C and shrink in a warm kitchen.</p>
+            </div>
+        </div>
+
+        <!-- Diagram Container -->
+        <div class="mermaid">
+            flowchart LR
+                %% Styling definitions
+                classDef ingredients fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#92400e
+                classDef time fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#075985
+                classDef action fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#334155
+                classDef stage fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,rx:10,ry:10
+
+                %% Stage 1: The Biga
+                subgraph Stage1 [1. The Biga]
+                    direction TB
+                    Ing1["Mix dry:<br>• 600g 00 Flour<br>• 5g Dry Yeast (or 10g fresh)"]:::ingredients
+                    Ing2["Dissolve:<br>• 5g Honey in 300ml Water"]:::ingredients
+                    Action1("Add water bit by bit with a spatula<br>~5 mins, until flour is wet<br>Do NOT knead: shaggy lumps, no gluten"):::action
+                    Ing3["Tall narrow container<br>Lid on, NOT sealed"]:::ingredients
+                    Wait1("Wait: 2 Hours<br>Room Temp"):::time
+                    Wait2("Wait: 48 Hours<br>Fridge"):::time
+
+                    Ing1 --> Ing2 --> Action1 --> Ing3 --> Wait1 --> Wait2
+                end
+
+                %% Stage 2: Mix the Dough
+                subgraph Stage2 [2. Mix the Dough]
+                    direction TB
+                    Wait3("Out of the fridge<br>Wait: 1 Hour, Room Temp"):::time
+                    Action2("Cut biga into small pieces<br>into the stand mixer"):::action
+                    Ing4["Add:<br>• 100ml Water<br>• 15g Salt<br>• 1 tbsp Olive Oil (home oven)"]:::ingredients
+                    Action3("Mix slow 10-15 mins until absorbed<br>then max speed until it detaches"):::action
+                    Wait4("Rest: 15 Mins in the bowl<br>(sticky is normal)"):::time
+                    Action4("Mix 5 seconds at max<br>Hook comes out clean"):::action
+
+                    Wait3 --> Action2 --> Ing4 --> Action3 --> Wait4 --> Action4
+                end
+
+                %% Stage 3: Bulk & Ball
+                subgraph Stage3 [3. Bulk &amp; Ball]
+                    direction TB
+                    Action5("Oiled hands: tap &amp; fold into a ball<br>Repeat 2-3× if sticky"):::action
+                    Ing5["Cover with plastic wrap"]:::ingredients
+                    Wait5("Wait: 1 Hour<br>Room Temp"):::time
+                    Action6("Don't degas. Oiled hands, no flour<br>Cut &amp; ball quickly"):::action
+                    Ing6["Ball box, balls spaced apart"]:::ingredients
+                    Wait6("Wait: 1 Hour<br>Room Temp (varies with kitchen)"):::time
+
+                    Action5 --> Ing5 --> Wait5 --> Action6 --> Ing6 --> Wait6
+                end
+
+                %% Stage 4: Home Oven Bake
+                subgraph Stage4 [4. Home Oven Bake]
+                    direction TB
+                    Ing7["Steel plate or pizza stone<br>Max temp, preheat 40-60 mins"]:::ingredients
+                    Action7("Stretch in semolina<br>Press the air out to the rim<br>~12 inch / 30cm"):::action
+                    Action8("Bake 1: base + sauce<br>until the crust is golden"):::action
+                    Action9("Bake 2: add mozzarella, cheese, oil<br>Broil until bubbling, watch it"):::action
+
+                    Ing7 --> Action7 --> Action8 --> Action9
+                end
+
+                %% Connect the stages
+                Stage1 ==> Stage2 ==> Stage3 ==> Stage4
+
+                %% Apply stage styling
+                class Stage1,Stage2,Stage3,Stage4 stage
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Biga &amp; Mixing Tips:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>The biga is <b>not kneaded</b>. Wet the flour into rough lumps and stop. Building gluten at this stage is the mistake, the 48 hours in the fridge do the work.</li>
+                    <li>The honey feeds the yeast for a more natural fermentation. Dissolve it in the water first.</li>
+                    <li>Keep the lid resting on top, never sealed. The biga needs to breathe.</li>
+                    <li>Use a stand mixer for the final dough. A 100% biga is hard to bring together by hand.</li>
+                    <li>The dough looks too sticky right after mixing. That is normal: the 15-minute rest in the bowl strengthens the gluten, and a 5-second burst afterwards pulls it cleanly off the hook.</li>
+                    <li>A home oven runs cooler than a pizza oven, so the dough is wetter and gets a spoon of oil to stay soft and puffy.</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Handling &amp; Home Oven Baking:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Handle with <b>oiled hands, not flour</b>, to keep the hydration. Use a little flour only if it is too hard to manage.</li>
+                    <li>After the bulk hour, don't press the air out. Cut and ball fast and put the balls well apart in the box.</li>
+                    <li>The two 1-hour rests are for ~20&deg;C. In a warmer kitchen they are shorter, so go by the puffiness of the balls.</li>
+                    <li>Preheat a baking steel (best) or stone at the oven's maximum for 40 to 60 minutes.</li>
+                    <li>Bake in <b>two stages</b>: first the stretched base with sauce until golden, then add mozzarella, a drizzle of oil on the rim for colour, and finish under the broiler until the cheese bubbles.</li>
+                    <li>The broiler burns fast. Watch it and switch it off as soon as the rim darkens.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Example schedule (pizza Saturday 7pm):</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div class="bg-white border border-slate-200 rounded-md p-3">
+                        <p class="font-semibold text-slate-900">Thursday 12:00pm</p>
+                        <p>Mix the biga, 2 hours on the counter.</p>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-md p-3">
+                        <p class="font-semibold text-slate-900">Thursday 2:00pm</p>
+                        <p>Biga into the fridge for 48 hours.</p>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-md p-3">
+                        <p class="font-semibold text-slate-900">Saturday 2:00pm</p>
+                        <p>Biga out, 1 hour on the counter.</p>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-md p-3">
+                        <p class="font-semibold text-slate-900">Saturday 3:00pm</p>
+                        <p>Mix the dough, rest 15 min, ball it up, wrap.</p>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-md p-3">
+                        <p class="font-semibold text-slate-900">Saturday 4:30pm</p>
+                        <p>Cut into balls. Steel or stone into the oven at 6pm.</p>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-md p-3">
+                        <p class="font-semibold text-slate-900">Saturday 7:00pm</p>
+                        <p>Stretch, top, two-stage bake.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">The topping in the video: ragù pizza</h3>
+                <p class="mb-2">Not a Margherita this time. Base of plain cream, then ragù, Romano cheese, and after the first bake fresh mozzarella, olive oil, more ragù and more Romano.</p>
+                <p class="font-semibold text-slate-800 mb-1">Quick ragù for pizza:</p>
+                <ol class="list-decimal pl-5 space-y-1">
+                    <li>Olive oil, chopped celery, carrot and onion. Cook slowly until golden.</li>
+                    <li>Add minced meat, a pinch of salt and pepper. A splash of white wine is traditional.</li>
+                    <li>Add about half a cup of tomato passata and some basil.</li>
+                    <li>Lid on, lowest heat, 20 to 30 minutes. It should be thick, not saucy, and cooled a little before topping.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

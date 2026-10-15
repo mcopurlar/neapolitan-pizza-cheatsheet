@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>80% Biga Dough Cheat Sheet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#e2e8f0',
+                primaryTextColor: '#1e293b',
+                primaryBorderColor: '#94a3b8',
+                lineColor: '#334155',
+                secondaryColor: '#f1f5f9',
+                tertiaryColor: '#fff'
+            },
+            flowchart: { curve: 'basis' }
+        });
+    </script>
+    <style>
+        body { background-color: #f8fafc; }
+        .mermaid { display: flex; justify-content: center; margin-top: 2rem; overflow-x: auto;}
+    </style>
+</head>
+<body class="text-slate-800 p-6 md:p-12 font-sans">
+
+    <div class="max-w-7xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+        <nav class="text-sm text-slate-500 mb-6">
+            <a href="index.html" class="hover:text-slate-900 underline">&larr; All recipes</a>
+        </nav>
+
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-slate-900 mb-2">Antonio Merola's 80% Biga Dough from Pizzeria Fiammè</h1>
+            <p class="text-slate-500">50% Biga, 80% Hydration, ~42-Hour Dough &middot; Ingredients &amp; Timeline Cheat Sheet</p>
+            <p class="text-xs text-slate-400 mt-2">Source: <a href="https://www.youtube.com/watch?v=425tQFOYuyo" class="underline hover:text-slate-600" target="_blank" rel="noopener">Pizzaiolo Napoletano ci mostra come prepara l'impasto con biga</a> by Roma Food (in Italian) &middot; method by Antonio Merola, head pizzaiolo at Pizzeria Fiammè, Rome</p>
+        </header>
+
+        <!-- Ingredients -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+            <div class="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
+                <h3 class="font-bold text-amber-900 mb-3">Ingredients (80% hydration, 280g balls)</h3>
+                <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="text-left text-amber-800 border-b border-amber-200">
+                            <th class="pb-2 font-semibold">Ingredient</th>
+                            <th class="pb-2 font-semibold text-right">1000g flour</th>
+                            <th class="pb-2 font-semibold text-right">500g flour</th>
+                            <th class="pb-2 font-semibold text-right">Baker's %</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-amber-900">
+                        <tr class="bg-amber-100/60"><td class="py-1.5 font-semibold" colspan="4">Day 1: the biga (half of the flour)</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Flour</td><td class="text-right">500g</td><td class="text-right">250g</td><td class="text-right">50%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Water <span class="text-amber-700">(50% of the biga flour)</span></td><td class="text-right">250g</td><td class="text-right">125g</td><td class="text-right">25%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Yeast</td><td class="text-right">0.5g</td><td class="text-right">0.25g</td><td class="text-right">0.05%</td></tr>
+                        <tr class="bg-amber-100/60"><td class="py-1.5 font-semibold" colspan="4">Day 2: the final dough (in this order)</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">The biga, torn into pieces</td><td class="text-right">all</td><td class="text-right">all</td><td class="text-right">&ndash;</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Cold water, first part</td><td class="text-right">250g</td><td class="text-right">125g</td><td class="text-right">25%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Yeast, second dose <span class="text-amber-700">(same as the biga)</span></td><td class="text-right">0.5g</td><td class="text-right">0.25g</td><td class="text-right">0.05%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Flour, the other half</td><td class="text-right">500g</td><td class="text-right">250g</td><td class="text-right">50%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Cold water, added little by little</td><td class="text-right">300g</td><td class="text-right">150g</td><td class="text-right">30%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Salt</td><td class="text-right">25g</td><td class="text-right">12.5g</td><td class="text-right">2.5%</td></tr>
+                        <tr class="border-t-2 border-amber-200 font-semibold"><td class="py-1.5">Total dough <span class="font-normal text-amber-700">(800g / 400g water)</span></td><td class="text-right">~1826g</td><td class="text-right">~913g</td><td class="text-right">80% water</td></tr>
+                        <tr><td class="py-1.5">Balls of 280g</td><td class="text-right">6 + 146g spare</td><td class="text-right">3 + 73g spare</td><td class="text-right">&ndash;</td></tr>
+                    </tbody>
+                </table>
+                </div>
+                <p class="text-xs text-amber-700 mt-3">The pizzeria makes 10kg flour + 10g yeast + 5kg water as biga, then adds 10kg flour, another 10g yeast, 11kg cold water and ~500g salt: about 130 balls. The first cold-water pour isn't weighed on camera; 250g is what brings the total to 80% with the 300g added last. Neither the flour nor the yeast type is named in the video.</p>
+            </div>
+            <div class="bg-sky-50 border border-sky-200 rounded-lg p-5">
+                <h3 class="font-bold text-sky-900 mb-3">Total Timeline &asymp; 42 hours</h3>
+                <ul class="text-sm text-sky-900 space-y-2">
+                    <li><span class="font-mono font-semibold">2 min</span> &middot; Mix the biga in reverse (no gluten)</li>
+                    <li><span class="font-mono font-semibold">16 hrs</span> &middot; Biga at 18&deg;C until doubled</li>
+                    <li><span class="font-mono font-semibold">~15 min</span> &middot; Final dough in the mixer, salt last</li>
+                    <li><span class="font-mono font-semibold">40&ndash;60 min</span> &middot; Rest in the mixer bowl</li>
+                    <li><span class="font-mono font-semibold">15&ndash;20 min</span> &middot; Fold, then rest</li>
+                    <li><span class="font-mono font-semibold">40&ndash;60 min</span> &middot; Balled (280g), room temp</li>
+                    <li><span class="font-mono font-semibold">24 hrs</span> &middot; Balls in the fridge at ~5&deg;C</li>
+                    <li><span class="font-mono font-semibold">not shown</span> &middot; Warm up, stretch &amp; bake</li>
+                </ul>
+                <p class="text-xs text-sky-700 mt-3">Two long stages: the biga ferments 16 hours at a steady 18&deg;C, the balls mature 24 hours cold. Everything in between takes under 3 hours on day 2.</p>
+            </div>
+        </div>
+
+        <!-- Diagram Container -->
+        <div class="mermaid">
+            flowchart LR
+                %% Styling definitions
+                classDef ingredients fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#92400e
+                classDef time fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#075985
+                classDef action fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#334155
+                classDef assumed fill:#ffffff,stroke:#94a3b8,stroke-width:1px,stroke-dasharray:5 5,color:#64748b
+                classDef stage fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,rx:10,ry:10
+
+                %% Stage 1: The Biga
+                subgraph Stage1 [1. The Biga, Day 1]
+                    direction TB
+                    Ing1["Into the mixer:<br>• 500g Flour<br>• 0.5g Yeast<br>• 250g Water"]:::ingredients
+                    Action1("2 mins in reverse only<br>Rough and torn, NO gluten<br>Grezzo stracciato!"):::action
+                    Ing2["Into a container<br>Break up any gluten that formed"]:::ingredients
+                    Wait1("Wait: 16 Hours<br>18°C, until doubled"):::time
+
+                    Ing1 --> Action1 --> Ing2 --> Wait1
+                end
+
+                %% Stage 2: Final Dough
+                subgraph Stage2 [2. Final Dough, Day 2]
+                    direction TB
+                    Action2("Tear the biga into pieces<br>into the mixer"):::action
+                    Ing3["Add:<br>• 250g Cold Water<br>Soak 2 mins"]:::ingredients
+                    Ing4["Add:<br>• 0.5g Yeast (second dose)<br>• 500g Flour"]:::ingredients
+                    Action3("Speed 1 for 7 mins<br>Add 300g cold water<br>little by little"):::action
+                    Ing5["Add:<br>• 25g Salt"]:::ingredients
+                    Action4("Stop 2 mins, then restart<br>Finish until it's NOT sticky"):::action
+
+                    Action2 --> Ing3 --> Ing4 --> Action3 --> Ing5 --> Action4
+                end
+
+                %% Stage 3: Rest, Fold & Ball
+                subgraph Stage3 [3. Rest, Fold &amp; Ball]
+                    direction TB
+                    Wait2("Rest: 40-60 Mins<br>In the mixer bowl<br>Key at high hydration"):::time
+                    Action5("Fold on the bench<br>for extra strength"):::action
+                    Wait3("Rest: 15-20 Mins"):::time
+                    Action6("Ball: 280g each<br>6 from 1kg, 3 from 500g"):::action
+                    Wait4("Wait: 40-60 Mins<br>Room Temp"):::time
+
+                    Wait2 --> Action5 --> Wait3 --> Action6 --> Wait4
+                end
+
+                %% Stage 4: Cold Proof & Bake
+                subgraph Stage4 [4. Cold Proof &amp; Bake, Day 3]
+                    direction TB
+                    Wait5("Wait: 24 Hours<br>Fridge ~5°C"):::time
+                    Wait6("Not in the video:<br>out of the fridge ~2-4 hrs<br>before baking"):::assumed
+                    Action7("Not in the video:<br>stretch, top, bake"):::assumed
+
+                    Wait5 --> Wait6 --> Action7
+                end
+
+                %% Connect the stages
+                Stage1 ==> Stage2 ==> Stage3 ==> Stage4
+
+                %% Apply stage styling
+                class Stage1,Stage2,Stage3,Stage4 stage
+        </div>
+        <p class="text-xs text-slate-400 text-center mt-2">Dashed boxes are not shown in the video. Fiammè's balls go straight from 24 hours in the fridge into the evening service.</p>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Biga &amp; Mixing Tips:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>The biga stays <b>rough and torn</b>: "Grezzo stracciato deve essere!" Two minutes, then stop. It should ferment and double, not build gluten. If a little gluten forms, tear it apart.</li>
+                    <li>Fiammè keeps the biga in a proofing cell at a <b>steady 18&deg;C</b> for 16 hours. At home a cool room, cellar or wine fridge at 17&ndash;19&deg;C does the same job.</li>
+                    <li>No reverse gear on a stand mixer? Stir the biga briefly with a spoon or the paddle until the flour is just wet, then stop.</li>
+                    <li>Use <b>only cold water</b> in the final dough so it doesn't overheat in the mixer. Antonio's note: if your biga fermented in the fridge, you don't need cold water.</li>
+                    <li>Add the <b>same yeast dose again</b> in the final dough. "If you put 10g on 10kg, I advise adding another 10g."</li>
+                    <li>"Always try to give the water little by little." On a stand mixer, add the 300g in 4&ndash;5 pours and let each one absorb. If 80% is new to you, hold back the last 50&ndash;100g.</li>
+                    <li>Salt goes in after the 7 minutes, then the mixer stops for 2 minutes. Salt isn't only flavour: it makes the dough stronger and easier to work, and Antonio credits the 2-minute pause for the structure.</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Resting, Balling &amp; Cold Proof:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>The finished dough should <b>not be sticky</b>. "The less sticky, the better", which is what the cold water helps with.</li>
+                    <li>The 40&ndash;60 minute rest in the bowl is <b>fundamental at high hydration</b>: the dough gets stronger and you get balls with strength. Afterwards it shows bubbles on top.</li>
+                    <li>One <b>fold</b> on the bench, then 15&ndash;20 minutes rest before cutting. The fold gives the final ball even more strength.</li>
+                    <li>Ball at <b>280g</b>. Wet or lightly oiled hands help with an 80% dough.</li>
+                    <li>Leave the balls 40&ndash;60 minutes at room temperature, then 24 hours at about 5&deg;C. They are ready for the next evening.</li>
+                    <li>80% is far wetter than the classic Neapolitan rules (55.5&ndash;62.5%), and the biga plus a 24-hour cold proof is a contemporary method. Fiammè calls it "authentic taste with a contemporary method".</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Weighing 0.5g or 0.25g of yeast:</h3>
+                <p class="mb-2">Most kitchen scales can't. Dissolve <b>1g fresh yeast in 100g cold water</b> and use the solution:</p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><b>1kg flour:</b> 50g solution = 0.5g yeast. Use it as part of the water: 50g solution + 200g water in the biga, and again 50g solution + 200g water for the first cold-water pour.</li>
+                    <li><b>500g flour:</b> 25g solution = 0.25g yeast, with 100g water in each of the same two places.</li>
+                </ul>
+                <p class="mt-2">The video doesn't say which yeast; Italian pizzerias normally mean fresh. With instant dry yeast use about a third (~0.17g per dose for 1kg), easiest with the same solution trick.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">What the video doesn't say:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><b>Flour.</b> Not named. A 16-hour biga at 80% total hydration needs a strong flour; a 00 or 0 around W300 or above is the usual choice.</li>
+                    <li><b>Yeast type.</b> See the left. The amount is tiny either way: 0.1% of the flour in total.</li>
+                    <li><b>Warming up and baking.</b> The video ends with the balls going into service. At home, take them out of the fridge a few hours ahead and go by the dough: soft, relaxed and puffy.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+            <h3 class="font-bold text-slate-900 mb-2">Example schedule (pizza Sunday 7pm):</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Friday 8:00pm</p>
+                    <p>Mix the biga, 2 minutes. Into a cool spot at ~18&deg;C.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Saturday 12:00pm</p>
+                    <p>Final dough: torn biga, cold water, yeast, flour, the rest of the water, salt.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Saturday 12:15pm</p>
+                    <p>Rest 40&ndash;60 min in the bowl, then fold and rest 15&ndash;20 min.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Saturday ~1:45pm</p>
+                    <p>Ball into 280g. Leave 40&ndash;60 min on the counter.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Saturday ~3:00pm</p>
+                    <p>Balls into the fridge at ~5&deg;C for 24 hours.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Sunday 3:00&ndash;5:00pm</p>
+                    <p>Balls out of the fridge to warm up. Pizza at 7pm.</p>
+                </div>
+            </div>
+            <p class="text-xs text-slate-400 mt-3">The biga timing is the one to respect: 16 hours at 18&deg;C. If your spot is warmer, the biga doubles sooner, so mix the final dough when it has doubled rather than by the clock.</p>
+        </div>
+    </div>
+</body>
+</html>

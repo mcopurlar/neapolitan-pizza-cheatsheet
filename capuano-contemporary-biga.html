@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contemporary Biga Dough Cheat Sheet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#e2e8f0',
+                primaryTextColor: '#1e293b',
+                primaryBorderColor: '#94a3b8',
+                lineColor: '#334155',
+                secondaryColor: '#f1f5f9',
+                tertiaryColor: '#fff'
+            },
+            flowchart: { curve: 'basis' }
+        });
+    </script>
+    <style>
+        body { background-color: #f8fafc; }
+        .mermaid { display: flex; justify-content: center; margin-top: 2rem; overflow-x: auto;}
+    </style>
+</head>
+<body class="text-slate-800 p-6 md:p-12 font-sans">
+
+    <div class="max-w-7xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+        <nav class="text-sm text-slate-500 mb-6">
+            <a href="index.html" class="hover:text-slate-900 underline">&larr; All recipes</a>
+        </nav>
+
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-slate-900 mb-2">Vincenzo Capuano's Contemporary Neapolitan Biga Dough</h1>
+            <p class="text-slate-500">50% Biga, 70&ndash;75% Hydration, ~24-Hour Dough &middot; Ingredients &amp; Timeline Cheat Sheet</p>
+            <p class="text-xs text-slate-400 mt-2">Source: <a href="https://www.youtube.com/watch?v=q2d3FP5jxEw" class="underline hover:text-slate-600" target="_blank" rel="noopener">Pizza Napoletana Contemporanea metodo Biga #2 | PROCEDIMENTO COMPLETO</a> by Vincenzo Capuano (in Italian) &middot; third-generation pizzaiolo with a small chain of contemporary pizzerias in Naples</p>
+        </header>
+
+        <!-- Ingredients -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+            <div class="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
+                <h3 class="font-bold text-amber-900 mb-3">Ingredients (70&ndash;75% hydration, 280&ndash;300g balls)</h3>
+                <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="text-left text-amber-800 border-b border-amber-200">
+                            <th class="pb-2 font-semibold">Ingredient</th>
+                            <th class="pb-2 font-semibold text-right">In the video</th>
+                            <th class="pb-2 font-semibold text-right">1000g flour</th>
+                            <th class="pb-2 font-semibold text-right">500g flour</th>
+                            <th class="pb-2 font-semibold text-right">Baker's %</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-amber-900">
+                        <tr class="bg-amber-100/60"><td class="py-1.5 font-semibold" colspan="5">Day 1: the biga (half of the flour)</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Strong flour, W over 300 <span class="text-amber-700">(Caputo Nuvola Super)</span></td><td class="text-right">1000g</td><td class="text-right">500g</td><td class="text-right">250g</td><td class="text-right">50%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Water <span class="text-amber-700">(50% of the biga flour)</span></td><td class="text-right">500ml</td><td class="text-right">250ml</td><td class="text-right">125ml</td><td class="text-right">25%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Dry yeast, dissolved in the water <span class="text-amber-700">(or fresh: 10g / 5g / 2.5g)</span></td><td class="text-right">3g</td><td class="text-right">1.5g</td><td class="text-right">0.75g</td><td class="text-right">0.15%</td></tr>
+                        <tr class="bg-amber-100/60"><td class="py-1.5 font-semibold" colspan="5">Day 2: the final dough (in this order)</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Water: a first part in the bowl, the rest little by little while mixing</td><td class="text-right whitespace-nowrap pl-3">900ml&ndash;1l</td><td class="text-right whitespace-nowrap pl-3">450&ndash;500ml</td><td class="text-right whitespace-nowrap pl-3">225&ndash;250ml</td><td class="text-right whitespace-nowrap pl-3">45&ndash;50%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Flour, the other half <span class="text-amber-700">(Caputo Nuvola, lower W)</span></td><td class="text-right">1000g</td><td class="text-right">500g</td><td class="text-right">250g</td><td class="text-right">50%</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">The biga</td><td class="text-right">all</td><td class="text-right">all</td><td class="text-right">all</td><td class="text-right">&ndash;</td></tr>
+                        <tr class="border-b border-amber-100"><td class="py-1.5">Salt, with the last of the water</td><td class="text-right">60g</td><td class="text-right">30g</td><td class="text-right">15g</td><td class="text-right">3%</td></tr>
+                        <tr class="border-t-2 border-amber-200 font-semibold"><td class="py-1.5">Total dough</td><td class="text-right whitespace-nowrap pl-3">~3.5kg</td><td class="text-right whitespace-nowrap pl-3">~1.75kg</td><td class="text-right whitespace-nowrap pl-3">~880g</td><td class="text-right whitespace-nowrap pl-3">70&ndash;75% water</td></tr>
+                        <tr><td class="py-1.5">Balls</td><td class="text-right whitespace-nowrap pl-3">11 &times; 300g + spare</td><td class="text-right whitespace-nowrap pl-3">6 &times; ~290g</td><td class="text-right whitespace-nowrap pl-3">3 &times; ~290g</td><td class="text-right">&ndash;</td></tr>
+                    </tbody>
+                </table>
+                </div>
+                <p class="text-xs text-amber-700 mt-3">The on-screen cards: biga = 1kg Nuvola Super, 500ml water, 3g dry yeast; final dough "for 10 pizzas of 300g" = the biga, 1kg Nuvola, "1l water (70%)", 60g salt. All of that water is 1.5l on 2kg flour, which is 75%, not 70%. For the labelled 70%, leave out the last 100ml. The water goes in little by little anyway, so let the dough decide. The ingredients weigh ~3.5kg, so you get 11 balls of 300g rather than 10. Capuano gives the yeast as 1% fresh or 0.3% dry of the biga flour; no more yeast goes in on day 2. 60g salt on 2kg flour is 3%, at the high end (most sheets here use 2.5%).</p>
+            </div>
+            <div class="bg-sky-50 border border-sky-200 rounded-lg p-5">
+                <h3 class="font-bold text-sky-900 mb-3">Total Timeline &asymp; 24 hours</h3>
+                <ul class="text-sm text-sky-900 space-y-2">
+                    <li><span class="font-mono font-semibold">3&ndash;4 min</span> &middot; Mix the biga in reverse (no gluten)</li>
+                    <li><span class="font-mono font-semibold">16&ndash;18 hrs</span> &middot; Biga at 18&deg;C</li>
+                    <li><span class="font-mono font-semibold">~15 min</span> &middot; Final dough in the mixer, salt last</li>
+                    <li><span class="font-mono font-semibold">15 min</span> &middot; Rest, then one fold (giro di corda)</li>
+                    <li><span class="font-mono font-semibold">1 hr</span> &middot; Bulk in a tub, room temp</li>
+                    <li><span class="font-mono font-semibold">until 2&times;</span> &middot; Balled (280&ndash;300g), room temp</li>
+                    <li><span class="font-mono font-semibold">4&ndash;6 hrs</span> &middot; Fridge at 4&deg;C holds the risen balls</li>
+                    <li><span class="font-mono font-semibold">not stated</span> &middot; Stretch, top, wood-fired bake</li>
+                </ul>
+                <p class="text-xs text-sky-700 mt-3">One long stage: the biga, 16&ndash;18 hours at a steady 18&deg;C. Day 2 is short: about 1.5 hours to balls, then they rise at room temperature until doubled. The fridge doesn't ferment the dough here, it holds ready balls for service.</p>
+            </div>
+        </div>
+
+        <!-- Diagram Container -->
+        <div class="mermaid">
+            flowchart LR
+                %% Styling definitions
+                classDef ingredients fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#92400e
+                classDef time fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#075985
+                classDef action fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#334155
+                classDef assumed fill:#ffffff,stroke:#94a3b8,stroke-width:1px,stroke-dasharray:5 5,color:#64748b
+                classDef stage fill:#ffffff,stroke:#cbd5e1,stroke-width:2px,rx:10,ry:10
+
+                %% Stage 1: The Biga
+                subgraph Stage1 [1. The Biga, Day 1]
+                    direction TB
+                    Ing1["Into the spiral mixer:<br>• 500g Strong Flour<br>(W over 300)"]:::ingredients
+                    Ing2["Dissolve:<br>• 1.5g Dry Yeast (or 5g fresh)<br>in 250ml Water"]:::ingredients
+                    Action1("Mixer in REVERSE<br>Pour the water in as it turns<br>3-4 mins, no more<br>Rough, NO gluten"):::action
+                    Wait1("Wait: 16-18 Hours<br>18°C"):::time
+
+                    Ing1 --> Ing2 --> Action1 --> Wait1
+                end
+
+                %% Stage 2: Final Dough
+                subgraph Stage2 [2. Final Dough, Day 2]
+                    direction TB
+                    Ing3["Into the bowl, in order:<br>• Part of the water<br>• 500g Flour (lower W)<br>• The biga"]:::ingredients
+                    Action2("Mix, adding the rest of the<br>450-500ml water little by little<br>as the dough absorbs it"):::action
+                    Ing4["With the last of the water:<br>• 30g Salt"]:::ingredients
+                    Action3("Mix until the bowl<br>comes away clean<br>= gluten network formed"):::action
+
+                    Ing3 --> Action2 --> Ing4 --> Action3
+                end
+
+                %% Stage 3: Rest, Fold & Ball
+                subgraph Stage3 [3. Rest, Fold &amp; Ball]
+                    direction TB
+                    Wait2("Rest: 15 Mins"):::time
+                    Action4("Giro di corda: one fold<br>Lift into a tub"):::action
+                    Wait3("Rest: 1 Hour<br>Room Temp"):::time
+                    Action5("Cut &amp; ball: 280-300g<br>6 from 1kg flour"):::action
+                    Wait4("Wait: until doubled<br>Room Temp, on a tray"):::time
+
+                    Wait2 --> Action4 --> Wait3 --> Action5 --> Wait4
+                end
+
+                %% Stage 4: Hold & Bake
+                subgraph Stage4 [4. Hold, Stretch &amp; Bake]
+                    direction TB
+                    Wait5("Fridge at 4°C<br>Use within 4-6 Hours"):::time
+                    Action6("Press the gas out to the rim<br>NEVER touch the cornicione<br>then widen"):::action
+                    Ing5["Hand-crushed tomato<br>1g salt per 100g<br>Provola, pre-cut &amp; fridge-dried"]:::ingredients
+                    Action7("Perforated peel<br>Wood-fired oven"):::action
+                    Wait6("Not in the video:<br>bake time &amp; temperature"):::assumed
+
+                    Wait5 --> Action6 --> Ing5 --> Action7 --> Wait6
+                end
+
+                %% Connect the stages
+                Stage1 ==> Stage2 ==> Stage3 ==> Stage4
+
+                %% Apply stage styling
+                class Stage1,Stage2,Stage3,Stage4 stage
+        </div>
+        <p class="text-xs text-slate-400 text-center mt-2">Amounts for 1kg flour in total; the video makes double. Dashed boxes are not in the video.</p>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Biga &amp; Mixing Tips:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>The biga needs a strong flour, "always with W above 300". Capuano uses <b>Caputo Nuvola Super</b> for the biga and the lower-W <b>Caputo Nuvola</b> for the final dough.</li>
+                    <li>Biga formula: <b>50% water and 1% fresh or 0.3% dry yeast</b> on the biga flour. Dissolve the dry yeast in the water first.</li>
+                    <li>Run the spiral mixer <b>in reverse</b> and pour the water in while it turns. Don't let a gluten network form: 3&ndash;4 minutes, no more. It must look <b>rough</b> ("grezzo"), not kneaded.</li>
+                    <li>No reverse gear? The video's tip: run the mixer on first speed for 3&ndash;4 minutes, or mix completely by hand.</li>
+                    <li>The biga ferments <b>16&ndash;18 hours at 18&deg;C</b>. At home a cool room, cellar or wine fridge at 17&ndash;19&deg;C does the job.</li>
+                    <li>Day 2 order: <b>water in the bowl first, then the flour, then the biga</b>. The dough keeps absorbing water, so add the rest little by little.</li>
+                    <li>Salt goes in with the <b>last bit of water</b> so it dissolves.</li>
+                    <li>The bowl should stay <b>clean</b> when the dough pulls away from it. That means the gluten network is well formed.</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">Resting, Balling &amp; Stretching:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Rest <b>15 minutes</b>, then a <b>giro di corda</b>: fold the dough over itself to tighten it, lift it out and into a tub.</li>
+                    <li>After <b>1 hour at room temperature</b>, cut and ball at <b>280&ndash;300g</b>.</li>
+                    <li>Put the balls on a tray and wait until they <b>double in volume</b>.</li>
+                    <li>Capuano then keeps them in the fridge at <b>4&deg;C</b>, which lets him use them over the next <b>4&ndash;6 hours</b>. In the video the balls rose at room temperature and spent about 30 minutes in the fridge.</li>
+                    <li>Stretching: push all the gas from the centre out to the rim, <b>never pressing the cornicione</b>, then widen the disc. That trapped gas is what gives the tall, airy rim of the contemporary style.</li>
+                    <li>Bake on a <b>perforated peel</b> ("one of the best") in a wood-fired oven.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">The pizza in the video: tomato &amp; provola</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Crush the tomatoes <b>by hand or with a food mill</b>, never with a blender.</li>
+                    <li>Season them with <b>1g salt for every 100g of tomato</b>.</li>
+                    <li>Cut the <b>provola</b> ahead of time and leave it in the fridge to <b>dry out</b>, so it doesn't release water on the pizza.</li>
+                </ul>
+                <p class="mt-3"><b>Weighing the yeast:</b> 1.5g dry yeast is about &frac12; tsp, 0.75g about &frac14; tsp. Or dissolve 3g in 100ml of the biga water and use 50ml (1kg flour) or 25ml (500g flour) of it as part of that water.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 mb-2">What the video doesn't say:</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><b>Mixing time and speed</b> for the final dough. Go by the bowl coming away clean.</li>
+                    <li><b>How long the balls take to double.</b> It depends on your kitchen. Go by the volume, and use the fridge to hold balls that are ready early.</li>
+                    <li><b>Bake time and oven temperature.</b> It is a wood-fired oven; contemporary Neapolitan pizza usually bakes in 60&ndash;90 seconds at 430&ndash;480&deg;C.</li>
+                    <li><b>Other flours.</b> Without Nuvola Super, use any 0 or 00 flour rated W 300 or above for the biga.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-8 text-sm text-slate-600 bg-slate-50 p-6 rounded-lg">
+            <h3 class="font-bold text-slate-900 mb-2">Example schedule (pizza Saturday 7pm):</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Friday 9:00pm</p>
+                    <p>Mix the biga, 3&ndash;4 minutes. Into a cool spot at ~18&deg;C.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Saturday 2:00pm</p>
+                    <p>Final dough: water, flour, biga, the rest of the water little by little, salt with the last of it.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Saturday ~2:30pm</p>
+                    <p>Rest 15 min, giro di corda, into a tub for 1 hour.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Saturday ~3:45pm</p>
+                    <p>Cut and ball at 280&ndash;300g. Onto a tray, covered, at room temperature.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Once doubled</p>
+                    <p>Into the fridge at 4&deg;C if you're not ready. They hold for 4&ndash;6 hours.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-md p-3">
+                    <p class="font-semibold text-slate-900">Saturday 7:00pm</p>
+                    <p>Stretch without touching the rim, tomato, provola, bake.</p>
+                </div>
+            </div>
+            <p class="text-xs text-slate-400 mt-3">The biga timing is the one to respect: 16&ndash;18 hours at 18&deg;C. If your spot is warmer, the biga is ready sooner. The balls usually take a few hours to double: in a warm kitchen they're ready early and wait in the fridge, in a cold one move day 2 an hour earlier.</p>
+        </div>
+    </div>
+</body>
+</html>
